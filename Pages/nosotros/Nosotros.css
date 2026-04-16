@@ -1,0 +1,170 @@
+/* --- Estilos Base (Copiados de Inicio) --- */
+* { 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 80px;
+    background-color: #f0f4f8;
+    color: #2c3e50;
+}
+
+/* --- Navegación (Copiada de Inicio) --- */
+.navbar {
+    background-color: #ffffff;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.navbar .logo { 
+    color: #2ecc71; 
+    font-size: 1.6rem; 
+    font-weight: bold; 
+    display: flex; 
+    align-items: center; 
+}
+
+.navbar .logo span { 
+    color: #3498db; 
+    margin-left: 5px; 
+}
+
+.navbar ul { 
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+}
+
+.navbar ul li { 
+    margin-left: 25px; 
+}
+
+.navbar ul li a { 
+    color: #555; 
+    text-decoration: none; 
+    font-weight: 600; 
+    transition: 0.3s; 
+}
+
+.navbar ul li a:hover { 
+    color: #3498db; 
+}
+
+/* --- Sección Contenedora (Basada en el estilo de Inicio) --- */
+.seccion-contenedor {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.encabezado h1 {
+    color: #1a5276;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.linea-decorativa {
+    height: 4px;
+    width: 60px;
+    background: #2ecc71;
+    margin: 0 auto 20px;
+    border-radius: 2px;
+}
+
+/* --- Pestañas (Aplicando colores de Inicio) --- */
+.tabs-medicas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn-tab {
+    padding: 12px 25px;
+    border: none;
+    background: #f0f4f8;
+    color: #1a5276;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.btn-tab.activo, .btn-tab:hover {
+    background: #3498db; /* Azul del Hero de Inicio */
+    color: white;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.tab-panel {
+    display: none;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #eaf2f8;
+    animation: fadeIn 0.6s ease;
+    text-align: left;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Directorio Médico (Estilo similar a Card-Servicio) --- */
+.grid-medicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card-medico {
+    background: #f8fbff;
+    padding: 25px;
+    border-radius: 15px;
+    border-bottom: 4px solid #3498db; /* Color acento de Inicio */
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card-medico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.card-medico img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.card-medico h4 {
+    margin: 10px 0 5px 0;
+    color: #1a5276;
+}
+
+.card-medico p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin: 0;
+}

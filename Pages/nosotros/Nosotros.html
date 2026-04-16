@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Salud & Bienestar - Nosotros</title>
+    <link rel="stylesheet" href="Nosotros.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Clínica<span>Salud</span></div>
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="../contacto/Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="nosotros" class="seccion-contenedor">
+        <div class="encabezado">
+            <h1>Nuestra Institución</h1>
+            <div class="linea-decorativa"></div>
+            <p>Comprometidos con la excelencia médica y el bienestar de tu familia.</p>
+        </div>
+
+        <div class="tabs-medicas">
+            <button class="btn-tab activo" onclick="abrirTab(event, 'historia')">Historia</button>
+            <button class="btn-tab" onclick="abrirTab(event, 'mision')">Misión</button>
+            <button class="btn-tab" onclick="abrirTab(event, 'vision')">Visión</button>
+        </div>
+
+        <div id="historia" class="tab-panel" style="display: block;">
+            <h3>Excelencia a través del tiempo</h3>
+            <p>Fundada con el objetivo de descentralizar la salud de alta complejidad, nuestra clínica ha evolucionado incorporando tecnología de vanguardia y los mejores especialistas del país.</p>
+        </div>
+
+        <div id="mision" class="tab-panel">
+            <h3>Nuestra Misión</h3>
+            <p>Brindar atención médica integral de la más alta calidad, centrada en la seguridad del paciente y la calidez humana, utilizando recursos tecnológicos innovadores.</p>
+        </div>
+
+        <div id="vision" class="tab-panel">
+            <h3>Nuestra Visión</h3>
+            <p>Ser la red de salud líder y referente en el país para el año 2030, reconocida por nuestra calidad asistencial y ética profesional.</p>
+        </div>
+
+        <h2 class="equipo-titulo">Directorio Médico</h2>
+        <div class="grid-medicos">
+            <div class="card-medico">
+                <img src="../img/directora.png" alt="Directora">
+                <h4>Dra. Mercedez</h4>
+                <p>Directora de Desarrollo e Innovación</p>
+                <p><strong>Especialidad:</strong> Ingeniería en Salud</p>
+            </div>
+            <div class="card-medico">
+                <img src="../img/director.png" alt="Director">
+                <h4>Dr. Felipe</h4>
+                <p>Director de Sistemas Médicos</p>
+                <p><strong>Especialidad:</strong> Gestión Hospitalaria</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="Nosotros.js"></script>
+</body>
+</html>

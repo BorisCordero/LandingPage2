@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Clínica Salud Integral</title>
+
+    <link rel="stylesheet" href="contacto.css">
+  
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Clínica <span>Salud</span></div>
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="../nosotros/Nosotros.html">Nosotros</a></li>
+            <li><a href="Contacto.html" class="active">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-section">
+
+        <div class="contact-info">
+            <h2>Contáctanos</h2>
+            <p>Estamos aquí para ayudarte. Escríbenos y responderemos lo antes posible.</p>
+
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Santiago, Chile</span>
+            </div>
+
+            <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+56 9 1234 5678</span>
+            </div>
+
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>contacto@clinicasaludintegral.cl</span>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form id="formContacto">
+
+                <div class="input-group">
+                    <input type="text" id="nombre" required>
+                    <label>Nombre Completo</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="correo" required>
+                    <label>Correo Electrónico</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="asunto" required>
+                    <label>Asunto</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="mensaje" required></textarea>
+                    <label>Mensaje</label>
+                </div>
+
+                <button type="submit" class="btn">
+                    <span>Enviar Mensaje</span>
+                </button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <script src="contacto.js"></script>
+
+</body>
+</html>
