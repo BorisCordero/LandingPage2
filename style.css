@@ -109,3 +109,108 @@ body {
     color: #1a5276; 
     margin-top: 0; 
 }
+
+/* --- Botones --- */
+.btn {
+    display: inline-block;
+    background: #2ecc71;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+}
+
+/* --- Sección Problema --- */
+.problema {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.problema h2 {
+    color: #1a5276;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.problema p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* --- Título de Servicios --- */
+.servicios h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #1a5276;
+    margin-bottom: 10px;
+}
+
+/* --- Imágenes tarjetas --- */
+.card-servicio img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* --- Beneficios --- */
+.beneficios {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.beneficios h2 {
+    color: #1a5276;
+    margin-bottom: 20px;
+}
+
+.beneficios ul {
+    list-style: none;
+    padding: 0;
+}
+
+.beneficios li {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+/* --- CTA --- */
+.cta {
+    background: linear-gradient(135deg, #3498db 0%, #1a5276 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+/* --- Footer --- */
+.footer {
+    background: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    text-decoration: none;
+}
